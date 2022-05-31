@@ -15,8 +15,8 @@ internal class SquareTest {
     @Test
     fun getSetPoint2() {
         var square = Square(MyPoint(1.0, 2.0), MyPoint(3.0, 4.0))
-        assertEquals(3.0, square.point2!!.getX())
-        assertEquals(4.0, square.point2!!.getY())
+        assertEquals(3.0, square.point2.getX())
+        assertEquals(4.0, square.point2.getY())
     }
 
     @Test
@@ -38,7 +38,7 @@ internal class SquareTest {
         square.moveShape(1.0, 1.0)
         assertEquals(1.0,square.point1.getX())
         assertEquals(4.0, square.point1.getY())
-        assertEquals(4.0, square.point2!!.getX())
-        assertEquals(1.0, square.point2!!.getY())
+        assertEquals(4.0, square.point2.getX())
+        assertEquals(1.0, square.point2.getY())
     }
 }

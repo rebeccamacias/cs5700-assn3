@@ -29,14 +29,6 @@ internal class LineTest {
     }
 
     @Test
-    fun setNullPt2() {
-        val point1 = MyPoint(0.0, 0.0)
-        assertThrows(IllegalArgumentException::class.java) {
-            Line(point1, null)
-        }
-    }
-
-    @Test
     fun getPoints() {
         val point1 = MyPoint(0.0, 0.0)
         val point2 = MyPoint(1.0, 1.0)
@@ -102,8 +94,8 @@ internal class LineTest {
         var line = Line(point1, point2)
         var point3 = MyPoint(1.0, 1.0)
         line.point2 = point3
-        assertEquals(1.0, line.point2!!.getX())
-        assertEquals(1.0, line.point2!!.getY())
+        assertEquals(1.0, line.point2.getX())
+        assertEquals(1.0, line.point2.getY())
     }
 
     @Test

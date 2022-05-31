@@ -69,8 +69,8 @@ internal class RectangleTest {
         rectangle.moveShape(3.0, 4.0)
         assertEquals(4.0, rectangle.point1.getX())
         assertEquals(6.0, rectangle.point1.getY())
-        assertEquals(6.0, rectangle.point2!!.getX())
-        assertEquals(9.0, rectangle.point2!!.getY())
+        assertEquals(6.0, rectangle.point2.getX())
+        assertEquals(9.0, rectangle.point2.getY())
     }
 
     @Test
@@ -79,7 +79,7 @@ internal class RectangleTest {
         rectangle.moveShape(-3.0, -4.0)
         assertEquals(-2.0, rectangle.point1.getX())
         assertEquals(-2.0, rectangle.point1.getY())
-        assertEquals(0.0, rectangle.point2!!.getX())
-        assertEquals(1.0, rectangle.point2!!.getY())
+        assertEquals(0.0, rectangle.point2.getX())
+        assertEquals(1.0, rectangle.point2.getY())
     }
 }

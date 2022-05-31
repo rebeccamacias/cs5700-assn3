@@ -1,7 +1,7 @@
 import kotlin.math.abs
 
-open class Ellipse(override var point1: MyPoint, val radius1: Double, val radius2: Double?) : Shape() {
-    override var point2: MyPoint? = null
+open class Ellipse(var point1: MyPoint, val radius1: Double, val radius2: Double?) : Shape() {
+    override var pointList: MutableList<MyPoint> = mutableListOf(point1)
 
     init {
         runChecks()
@@ -23,5 +23,11 @@ open class Ellipse(override var point1: MyPoint, val radius1: Double, val radius
 
     override fun getArea(): Double {
         return Math.PI * radius1 * radius2!!
+    }
+
+    override fun moveShape(xDelta: Double, yDelta: Double) {
+        for (point in pointList) {
+            point.movePoint(xDelta, yDelta)
+        }
     }
 }

@@ -42,13 +42,13 @@ internal class TriangleTest {
         val point3 = MyPoint(0.0, 4.0)
         val triangle = Triangle(point1, point2, point3)
         val point1point2Dist = sqrt(
-            (point1.getX() - point2!!.getX()).pow(2.0) + (point1.getY() - point2!!.getY()).pow(2.0)
+            (point1.getX() - point2.getX()).pow(2.0) + (point1.getY() - point2.getY()).pow(2.0)
         )
         val point1point3Dist = sqrt(
             (point1.getX() - point3.getX()).pow(2.0) + (point1.getY() - point3.getY()).pow(2.0)
         )
         val point2point3Dist = sqrt(
-            (point2!!.getX() - point3.getX()).pow(2.0) + (point2!!.getY() - point3.getY()).pow(2.0)
+            (point2.getX() - point3.getX()).pow(2.0) + (point2.getY() - point3.getY()).pow(2.0)
         )
         val s = (point1point2Dist + point1point3Dist + point2point3Dist) / 2
         val area = sqrt(s * (s - point1point2Dist) * (s - point1point3Dist) * (s - point2point3Dist))
@@ -79,7 +79,7 @@ internal class TriangleTest {
         val point2 = MyPoint(0.0, 0.0)
         val point3 = MyPoint(0.0, 0.0)
         assertThrows(IllegalArgumentException::class.java) {
-            val triangle = Triangle(point1, point2, point3)
+            Triangle(point1, point2, point3)
         }
     }
 
