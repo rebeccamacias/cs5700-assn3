@@ -59,3 +59,7 @@ assn1/src/main/kotlin/Rectangle.kt
 /src/jvmMain/kotlin/Pentagon.kt
 /src/jvmMain/kotlin/CompositeShape.kt
 /src/jvmMain/kotlin/NPointStar.kt
+/src/jvmTest/kotlin/NPointStarTest.java
+/src/jvmTest/kotlin/NPointStarTest.kt
+/src/jvmTest/kotlin/CompositeShapeTest.java
+/src/jvmTest/kotlin/CompositeShapeTest.kt

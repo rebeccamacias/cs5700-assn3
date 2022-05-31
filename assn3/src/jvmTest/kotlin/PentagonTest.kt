@@ -6,22 +6,25 @@ internal class PentagonTest {
 
     @Test
     fun getArea() {
-        val pentagon = Pentagon(MyPoint(0.0, 0.0),5.0)
-        assertEquals(43.01, pentagon.getArea())
-    }
-
-    @Test
-    fun tryNegArea() {
-        assertThrows(IllegalArgumentException::class.java) {
-            Pentagon(MyPoint(0.0, 0.0), -5.0)
-        }
+        val a = MyPoint(0.0, 3.0)
+        val b = MyPoint(5.0 , 0.0)
+        val c = MyPoint(3.0, -5.0)
+        val d = MyPoint(-3.0, -5.0)
+        val e = MyPoint(-5.0, 0.0)
+        val pentagon = Pentagon(a, b, c, d, e)
+        assertEquals(55.0, pentagon.getArea())
     }
 
     @Test
     fun moveShape() {
-        val pentagon = Pentagon(MyPoint(0.0, 0.0),5.0)
+        val a = MyPoint(0.0, 3.0)
+        val b = MyPoint(5.0 , 0.0)
+        val c = MyPoint(3.0, -5.0)
+        val d = MyPoint(-3.0, -5.0)
+        val e = MyPoint(-5.0, 0.0)
+        val pentagon = Pentagon(a, b, c, d, e)
         pentagon.moveShape(1.0, 1.0)
         assertEquals(1.0, pentagon.point1.getX())
-        assertEquals(1.0, pentagon.point1.getY())
+        assertEquals(4.0, pentagon.point1.getY())
     }
 }
