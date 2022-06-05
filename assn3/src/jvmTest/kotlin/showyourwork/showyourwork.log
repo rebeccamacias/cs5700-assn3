@@ -21407,3 +21407,1364 @@ internal class CompositeShapeTest {
 "e","","//","194","1653969719424","SquareTest.kt","1.1.3 for 2021-2022 @t1",
 "e","","//","167","1653969719424","SquareTest.kt","1.1.3 for 2021-2022 @t1",
 "e","","//","155","1653969719424","SquareTest.kt","1.1.3 for 2021-2022 @t1",
+"e","","import org.junit.jupiter.api.Assertions.*
+
+internal class SquareTest {
+
+    @org.junit.jupiter.api.Test
+    fun recalculateWidthAndHeight() {
+    }
+}","0","1654051758009","SquareTest.java","1.1.3 for 2021-2022 @t1",
+"e","","","0","1654051758009","SquareTest.java","1.1.3 for 2021-2022 @t1",
+"e","","import org.junit.jupiter.api.Test
+
+import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.assertDoesNotThrow
+
+internal class SquareTest {
+
+    @Test
+    fun getSetPoint1() {
+        var square = Square(MyPoint(1.0, 2$0., MyPoint(3.0, 4.0))
+        assertEquals(1.0, square.point1.getX())
+        assertEquals(2.0, square.point1.getY())
+    }
+
+    @Test
+    fun getSetPoint2() {
+        var square = Square(MyPoint(1.0, 2.0), MyPoint(3.0, 4.0))
+        assertEquals(3.0, square.point2.getX())
+        assertEquals(4.0, square.point2.getY())
+    }
+
+    @Test
+    fun getArea() {
+        var square = Square(MyPoint(1.0, 2.0), MyPoint(3.0, 4.0))
+        assertEquals(4.0, square.getArea())
+    }
+
+    @Test
+    fun tryDifferingWidthHeight() {
+        assertThrows(IllegalArgumentException::class.java) {
+            Square(MyPoint(1.0, 2.0), MyPoint(3.0, 5.0))
+        }
+    }
+
+    @Test
+  fun moveShape() {
+      var square = Square()
+  MyPoint(0.0, 3.0), MyPoint(3.0, 0.0)eSpe(1.0, vsquare.moveShape(1.0, 10)
+        assertEquals(1.0,square.point1.getX().0square.topLeftCorner.y)
+        apoint1.getY(), uare.bottomRightCorner.x)
+       point2,getX()sqre.bottomRightCorner.y)
+//    }
+}point2","0","1654051758054","SquareTest.kt","1.1.3 for 2021-2022 @t1",
+"e","import org.junit.jupiter.api.Test
+
+import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.assertDoesNotThrow
+
+internal class SquareTest {
+
+    @Test
+    fun getSetPoint1() {
+        var square = Square(MyPoint(1.0, 2.0), MyPoint(3.0, 4.0))
+        assertEquals(1.0, square.point1.getX())
+        assertEquals(2.0, square.point1.getY())
+    }
+
+    @Test
+    fun getSetPoint2() {
+        var square = Square(MyPoint(1.0, 2.0), MyPoint(3.0, 4.0))
+        assertEquals(3.0, square.point2.getX())
+        assertEquals(4.0, square.point2.getY())
+    }
+
+    @Test
+    fun getArea() {
+        var square = Square(MyPoint(1.0, 2.0), MyPoint(3.0, 4.0))
+        assertEquals(4.0, square.getArea())
+    }
+
+    @Test
+    fun tryDifferingWidthHeight() {
+        assertThrows(IllegalArgumentException::class.java) {
+            Square(MyPoint(1.0, 2.0), MyPoint(3.0, 5.0))
+        }
+    }
+
+    @Test
+    fun moveShape() {
+        var square = Square(MyPoint(0.0, 3.0), MyPoint(3.0, 0.0))
+        square.moveShape(1.0, 1.0)
+        assertEquals(1.0,square.point1.getX())
+        assertEquals(4.0, square.point1.getY())
+        assertEquals(4.0, square.point2.getX())
+        assertEquals(1.0, square.point2.getY())
+    }
+}","","0","1654051758054","SquareTest.kt","1.1.3 for 2021-2022 @t1",
+"e","","import org.junit.jupiter.api.Test
+
+import org.junit.jupiter.api.Assertions.*
+
+internal class RectangleTest {
+
+    @Test
+    fun getWidth() {
+    }
+
+    @Test
+    fun setWidth() {
+    }
+
+    @Test
+    fun getHeight() {
+    }
+
+    @Test
+    fun setHeight() {
+    }
+
+    @Test
+    fun getFirstPoint() {
+    }
+
+    @Test
+    fun getSecondPoint() {
+    }
+
+    @Test
+    fun getArea() {
+    }
+
+    @Test
+    fun getPoint1() {
+    }
+
+    @Test
+    fun setPoint1() {
+    }
+
+    @Test
+    fun getPoint2() {
+    }
+
+    @Test
+    fun setPoint2() {
+    }
+}","0","1654051758128","RectangleTest.java","1.1.3 for 2021-2022 @t1",
+"e","","","0","1654051758128","RectangleTest.java","1.1.3 for 2021-2022 @t1",
+"e","","import org.junit.jupiter.api.Test
+
+import org.junit.jupiter.api.Assertions.*
+
+internal class RectangleTest {
+
+    @Test
+    fun getFirstPoint() {
+        val rectangle = Rectangle(MyPoint(0.0, 10.0), MyPoint(3.0, 120))
+        assertEquals(0.0, rectangle.getFirstPoint().getX())
+        assertEquals(10.0, rectangle.getFirstPoint().getY())
+    }
+
+    @Test
+    fun getSecondPoint() {
+        val rectangle = Rectangle(MyPoint(0.0, 10.0), MyPoint(3.0, 2.0))
+        assertEquals(3.0, rectangle.getSecondPoint().getX())
+        assertEquals(2.0, rectangle.getSecondPoint().getY())
+    }
+
+    @Test
+    fun getWidth() {
+        val rectangle = Rectangle(MyPoint(0.0, 10.0), MyPoint(3.0, 2.0))
+        assertEquals(3.0, rectangle.width)
+    }
+
+    @Test
+    fun getHeight() {
+        val rectangle = Rectangle(MyPoint(0.0, 10.0), MyPoint(3.0, 2.0))
+        assertEquals(8.0, rectangle.height)
+    }
+
+    @Test
+    fun tryZeroWidth() {
+        assertThrows(IllegalArgumentException::class.java) {
+            Rectangle(MyPoint(1.0, 2.0), MyPoint(1.0, 7.0))
+        }
+    }
+
+    @Test
+    fun tryZeroHeight() {
+        assertThrows(IllegalArgumentException::class.java) {
+            Rectangle(MyPoint(1.0, 2.0), MyPoint(3.0, 2.0))
+        }
+    }
+
+    @Test
+    fun getArea() {
+        var rectangle = Rectangle(MyPoint(1.0, 2.0), MyPoint(3.0, 5.0))
+        assertEquals(6.0, rectangle.getArea())
+    }
+
+    @Test
+    fun getAreaWithNegatives() {
+        var rectangle = Rectangle(MyPoint(-1.0, 2.0), MyPoint(-3.0, 5.0))
+        assertEquals(6.0, rectangle.getArea())
+    }
+
+    @Test
+    fun tryZeroArea() {
+        assertThrows(IllegalArgumentException::class.java) {
+            Rectangle(MyPoint(1.0, 2.0), MyPoint(1.0, 2.0))
+        }
+    }
+
+    @Test
+    fun moveShape() {
+        var rectangle = Rectangle(MyPoint(1.0, 2.0), MyPoint(3$0, 5.0))
+        vrectangle.moveShape(3.0, 40)
+        assertEquals(4.0, rectangle.point1.getX().x        assertEquals(6.0, rectangle.point1.getY())
+        assertEquals(6.0, rectangle.point2.getX())
+        assertEquals(9.0, rectangle.point2.getY())
+    }
+
+    @Test
+    fun moveShapeNegDelta(){
+        var rectangle = Rectangle(MyPoint(1.0, 2.0), MyPoint(3.0, 5.0))
+        rectangle.moveShape(-3.0, -4.0)
+        assertEquals(-2.0, rectangle.point1.getX())
+        assertEquals(-2.0, rectangle.point1.getY())
+        assertEquals(0.0, rectangle.point2.getX())
+        assertEquals(1.0, rectangle.point2.getY())
+    }
+}","0","1654051758173","RectangleTest.kt","1.1.3 for 2021-2022 @t1",
+"e","import org.junit.jupiter.api.Test
+
+import org.junit.jupiter.api.Assertions.*
+
+internal class RectangleTest {
+
+    @Test
+    fun getFirstPoint() {
+        val rectangle = Rectangle(MyPoint(0.0, 10.0), MyPoint(3.0, 2.0))
+        assertEquals(0.0, rectangle.getFirstPoint().getX())
+        assertEquals(10.0, rectangle.getFirstPoint().getY())
+    }
+
+    @Test
+    fun getSecondPoint() {
+        val rectangle = Rectangle(MyPoint(0.0, 10.0), MyPoint(3.0, 2.0))
+        assertEquals(3.0, rectangle.getSecondPoint().getX())
+        assertEquals(2.0, rectangle.getSecondPoint().getY())
+    }
+
+    @Test
+    fun getWidth() {
+        val rectangle = Rectangle(MyPoint(0.0, 10.0), MyPoint(3.0, 2.0))
+        assertEquals(3.0, rectangle.width)
+    }
+
+    @Test
+    fun getHeight() {
+        val rectangle = Rectangle(MyPoint(0.0, 10.0), MyPoint(3.0, 2.0))
+        assertEquals(8.0, rectangle.height)
+    }
+
+    @Test
+    fun tryZeroWidth() {
+        assertThrows(IllegalArgumentException::class.java) {
+            Rectangle(MyPoint(1.0, 2.0), MyPoint(1.0, 7.0))
+        }
+    }
+
+    @Test
+    fun tryZeroHeight() {
+        assertThrows(IllegalArgumentException::class.java) {
+            Rectangle(MyPoint(1.0, 2.0), MyPoint(3.0, 2.0))
+        }
+    }
+
+    @Test
+    fun getArea() {
+        var rectangle = Rectangle(MyPoint(1.0, 2.0), MyPoint(3.0, 5.0))
+        assertEquals(6.0, rectangle.getArea())
+    }
+
+    @Test
+    fun getAreaWithNegatives() {
+        var rectangle = Rectangle(MyPoint(-1.0, 2.0), MyPoint(-3.0, 5.0))
+        assertEquals(6.0, rectangle.getArea())
+    }
+
+    @Test
+    fun tryZeroArea() {
+        assertThrows(IllegalArgumentException::class.java) {
+            Rectangle(MyPoint(1.0, 2.0), MyPoint(1.0, 2.0))
+        }
+    }
+
+    @Test
+    fun moveShape() {
+        var rectangle = Rectangle(MyPoint(1.0, 2.0), MyPoint(3.0, 5.0))
+        rectangle.moveShape(3.0, 4.0)
+        assertEquals(4.0, rectangle.point1.getX())
+        assertEquals(6.0, rectangle.point1.getY())
+        assertEquals(6.0, rectangle.point2.getX())
+        assertEquals(9.0, rectangle.point2.getY())
+    }
+
+    @Test
+    fun moveShapeNegDelta(){
+        var rectangle = Rectangle(MyPoint(1.0, 2.0), MyPoint(3.0, 5.0))
+        rectangle.moveShape(-3.0, -4.0)
+        assertEquals(-2.0, rectangle.point1.getX())
+        assertEquals(-2.0, rectangle.point1.getY())
+        assertEquals(0.0, rectangle.point2.getX())
+        assertEquals(1.0, rectangle.point2.getY())
+    }
+}","","0","1654051758173","RectangleTest.kt","1.1.3 for 2021-2022 @t1",
+"e","","import org.junit.jupiter.api.Test
+
+import org.junit.jupiter.api.Assertions.*
+
+internal class EllipseTest {
+
+    @Test
+    fun getSetCenterPoint() {
+        val point1 = MyPoint(0.0, 0.0)
+        val ellipse = Ellipse(point1, 5.0, 6.0)
+        assertEquals(0.0, ellipse.point1.getX())
+        assertEquals(0.0, ellipse.point1.getY())
+    }
+
+    @Test
+    fun getSetRadius1() {
+        val ellipse = Ellipse(MyPoint(0.0, 0.0), 1.0, 5.0)
+        assertEquals(1.0, ellipse.get1stR$dius())
+    }
+
+    @Test
+    fun getSetRadius2() {
+        val ellipse = Ellipse(MyPoint(0.0, 0.0), 1.0, 5.0)
+        assertEq$uals5.0, ellipse.get2ndRadius())
+    }
+
+    @Test
+    fun getArea() {
+        val radius1 = 1.0
+        val radius2 = 2.0
+        val ellipse = Ellipse(MyPoint(0.0, 0.0), 1.0, 2.0)
+        assertEquals(Math.PI * radius1 * radius2, ellipse.getArea())
+    }
+
+    @Test
+    fun getAreaR1Zero() {
+        val radius1 = 0.0
+        val radius2 = 2.0
+        assertThrows(IllegalArgumentException::class.java) {
+            Ellipse(MyPoint(0.0, 0.0), radius1, radius2)
+        }
+    }
+
+    @Test
+    fun getAreaR2Zero() {
+        val radius1 = 2.0
+        val radius2 = 0.0
+        assertThrows(IllegalArgumentException::class.java) {
+            Ellipse(MyPoint(0.0, 0.0), radius1, radius2)
+        }
+    }
+
+    @Test
+    fun getAreaBothZeros() {
+        val radius1 = 0.0
+        val radius2 = 0.0
+        assertThrows(IllegalArgumentException::class.java) {
+            Ellipse(MyPoint(0.0, 0.0), radius1, radius2)
+        }
+    }
+
+    @Test
+    fun moveShape() {
+        val point = MyPoint(0.0, 0.0)
+        val ellipse = Ellipse(point, 5.0, 6.0)
+        ellipse.moveShape(1.0, 1.0)
+        assertEquals(1.0, ellipse.point1.getX())
+        assertEquals(1.0, ellipse.point1.getY())
+    }
+}","0","1654051758211","EllipseTest.kt","1.1.3 for 2021-2022 @t1",
+"e","import org.junit.jupiter.api.Test
+
+import org.junit.jupiter.api.Assertions.*
+
+internal class EllipseTest {
+
+    @Test
+    fun getSetCenterPoint() {
+        val point1 = MyPoint(0.0, 0.0)
+        val ellipse = Ellipse(point1, 5.0, 6.0)
+        assertEquals(0.0, ellipse.point1.getX())
+        assertEquals(0.0, ellipse.point1.getY())
+    }
+
+    @Test
+    fun getSetRadius1() {
+        val ellipse = Ellipse(MyPoint(0.0, 0.0), 1.0, 5.0)
+        assertEquals(1.0, ellipse.get1stRadius())
+    }
+
+    @Test
+    fun getSetRadius2() {
+        val ellipse = Ellipse(MyPoint(0.0, 0.0), 1.0, 5.0)
+        assertEquals(5.0, ellipse.get2ndRadius())
+    }
+
+    @Test
+    fun getArea() {
+        val radius1 = 1.0
+        val radius2 = 2.0
+        val ellipse = Ellipse(MyPoint(0.0, 0.0), 1.0, 2.0)
+        assertEquals(Math.PI * radius1 * radius2, ellipse.getArea())
+    }
+
+    @Test
+    fun getAreaR1Zero() {
+        val radius1 = 0.0
+        val radius2 = 2.0
+        assertThrows(IllegalArgumentException::class.java) {
+            Ellipse(MyPoint(0.0, 0.0), radius1, radius2)
+        }
+    }
+
+    @Test
+    fun getAreaR2Zero() {
+        val radius1 = 2.0
+        val radius2 = 0.0
+        assertThrows(IllegalArgumentException::class.java) {
+            Ellipse(MyPoint(0.0, 0.0), radius1, radius2)
+        }
+    }
+
+    @Test
+    fun getAreaBothZeros() {
+        val radius1 = 0.0
+        val radius2 = 0.0
+        assertThrows(IllegalArgumentException::class.java) {
+            Ellipse(MyPoint(0.0, 0.0), radius1, radius2)
+        }
+    }
+
+    @Test
+    fun moveShape() {
+        val point = MyPoint(0.0, 0.0)
+        val ellipse = Ellipse(point, 5.0, 6.0)
+        ellipse.moveShape(1.0, 1.0)
+        assertEquals(1.0, ellipse.point1.getX())
+        assertEquals(1.0, ellipse.point1.getY())
+    }
+}","","0","1654051758211","EllipseTest.kt","1.1.3 for 2021-2022 @t1",
+"e","","import org.junit.jupiter.api.Test
+import org.junit.jupiter.api.Assertions.*
+import kotlin.math.sqrt
+
+internal class LineTest {
+
+    @Test
+    fun getAreaInLine() {
+        val point1 = MyPoint(0.0, 0.0)
+        val point2 = MyPoint(0.0, 1.0)
+        val line = Line(point1, point2)
+        assertEquals(1.0, line.getArea()//    //
+    @Tes//    fun getAreaDiag(){
+        val point1 = MyPoint(0.0, 0.0)
+        val point2 = MyPoint(1.0, 1.0)
+        val line = Line(point1, point2//        assertEquals(sqrt(2.0), line.getArea())
+    }
+
+    @Test
+    fun getAreaNegDiag(){
+        val point1 = MyPoint(0.0, 0.0)
+        val pline = Line(point1, point2
+        val point2 = MyPoint(-1.0, 1.0)
+        assertEquals(1.4142135623730951, line.getArea())
+    }
+
+    @Test
+    fun getPoints() {
+        val point1 = MyPoint(0.0, 0.0)
+        val point2 = MyPoint(1.0, 1.0)
+        val line = Line(point1, point2)
+        assertEquals(2, line.getPoints().size)
+        line.setGivenPoint2(point2Points()[0].getX()
+        assertEquals(0.0, line.get$Points()[0].getY())
+        assertEquals(1.0, line.getPoints()[1].getX())
+        assertEquals(1.0, line.getPoints()[1].getY())
+    }
+
+    @Test
+    fun moveShape() {
+        val point1 = MyPoint(0.0, 0.0)
+        val point2 = MyPoint(1.0, 1.0)
+        val line = Line(point1, point2)
+        var line = Line(nt2moveShape(1.0, 1.0.setGiv1nPoint1ine.getPoints()[0].getX())
+        assertEquals(1.0, line.getPoints()[0].getY())
+        assertEquals(2.0, line.getPoints()[//1getX().x        a//ssertEquals(2.0, line.getPoints()[1getY().y//   
+
+    @Test
+    fun getPosSlope() {
+        var point1 = MyPoint(0.0, 0$0)
+        var point2 = MyPoint(1$0, 1.0)
+        var line = Line(point1, point2)
+        assertEquals(1.0, line.getSlope())
+    }
+
+    @Test
+    fun getNegSlope() {
+        var point1 = MyPoint(0.0, 0.0)
+        var point2 = MyPoint(-1.0, 7.0)
+        var line = Line(point1, point2)
+        assertEquals(-7.0, line.getSlope())
+    }
+
+    @Test
+    fun getZeroSlope() {
+        var point1 = MyPoint(7.0 ,0.0)
+        var point2 = MyPoint(0.0, 0.0)
+        var line = Line(point1, point2)
+        assertEquals(0.0, line.getSlope())
+    }
+
+    @Test
+    fun getSetPoint1() {
+        var point1 = MyPoint(7.0, 0.$)
+        point1.setX(7.0)
+     .0, 0.0  poin   point2int2 =0MyPopoint1, point2enPoint1(pline.setGivenPoint1(pP.0, 1.0in(1$)n = line.point1 = point3
+        assertEquals(1.0, line.point1.getX())
+        assertEquals(1.0, line.point1.getY())
+    }
+
+    @Test
+    fun getSetPoint2() {
+        var point1 = MyPoint(7.0, 0.0)
+        var point2 = MyPoint(0.0, 0.0)
+        var line = Line(point1, point2)
+        var point3 = MyPoint(1.0, 1.0)
+        line.point2 = point3
+        assertEquals(1.0, line.point2.getX())
+        assertEquals(1.0, line.point2.getY())
+    }
+
+    @Test
+    fun getSetEqualPoints() {
+        var point1 = MyPoint(7.0, 0.0)
+        var point2 = MyPoint(7.0, 0.0)
+        assertThrows(IllegalArgumentException::class.java) {
+            Line(point1, point2)
+        }
+    }
+}","0","1654051758264","LineTest.kt","1.1.3 for 2021-2022 @t1",
+"e","import org.junit.jupiter.api.Test
+import org.junit.jupiter.api.Assertions.*
+import kotlin.math.sqrt
+
+internal class LineTest {
+
+    @Test
+    fun getAreaInLine() {
+        val point1 = MyPoint(0.0, 0.0)
+        val point2 = MyPoint(0.0, 1.0)
+        val line = Line(point1, point2)
+        assertEquals(1.0, line.getArea())
+    }
+
+    @Test
+    fun getAreaDiag(){
+        val point1 = MyPoint(0.0, 0.0)
+        val point2 = MyPoint(1.0, 1.0)
+        val line = Line(point1, point2)
+        assertEquals(sqrt(2.0), line.getArea())
+    }
+
+    @Test
+    fun getAreaNegDiag(){
+        val point1 = MyPoint(0.0, 0.0)
+        val point2 = MyPoint(-1.0, 1.0)
+        val line = Line(point1, point2)
+        assertEquals(1.4142135623730951, line.getArea())
+    }
+
+    @Test
+    fun getPoints() {
+        val point1 = MyPoint(0.0, 0.0)
+        val point2 = MyPoint(1.0, 1.0)
+        val line = Line(point1, point2)
+        assertEquals(2, line.getPoints().size)
+        assertEquals(0.0, line.getPoints()[0].getX())
+        assertEquals(0.0, line.getPoints()[0].getY())
+        assertEquals(1.0, line.getPoints()[1].getX())
+        assertEquals(1.0, line.getPoints()[1].getY())
+    }
+
+    @Test
+    fun moveShape() {
+        val point1 = MyPoint(0.0, 0.0)
+        val point2 = MyPoint(1.0, 1.0)
+        val line = Line(point1, point2)
+        line.moveShape(1.0, 1.0)
+        assertEquals(1.0, line.getPoints()[0].getX())
+        assertEquals(1.0, line.getPoints()[0].getY())
+        assertEquals(2.0, line.getPoints()[1].getX())
+        assertEquals(2.0, line.getPoints()[1].getY())
+    }
+
+    @Test
+    fun getPosSlope() {
+        var point1 = MyPoint(0.0, 0.0)
+        var point2 = MyPoint(1.0, 1.0)
+        var line = Line(point1, point2)
+        assertEquals(1.0, line.getSlope())
+    }
+
+    @Test
+    fun getNegSlope() {
+        var point1 = MyPoint(0.0, 0.0)
+        var point2 = MyPoint(-1.0, 7.0)
+        var line = Line(point1, point2)
+        assertEquals(-7.0, line.getSlope())
+    }
+
+    @Test
+    fun getZeroSlope() {
+        var point1 = MyPoint(7.0 ,0.0)
+        var point2 = MyPoint(0.0, 0.0)
+        var line = Line(point1, point2)
+        assertEquals(0.0, line.getSlope())
+    }
+
+    @Test
+    fun getSetPoint1() {
+        var point1 = MyPoint(7.0, 0.0)
+        var point2 = MyPoint(0.0, 0.0)
+        var line = Line(point1, point2)
+        var point3 = MyPoint(1.0, 1.0)
+        line.point1 = point3
+        assertEquals(1.0, line.point1.getX())
+        assertEquals(1.0, line.point1.getY())
+    }
+
+    @Test
+    fun getSetPoint2() {
+        var point1 = MyPoint(7.0, 0.0)
+        var point2 = MyPoint(0.0, 0.0)
+        var line = Line(point1, point2)
+        var point3 = MyPoint(1.0, 1.0)
+        line.point2 = point3
+        assertEquals(1.0, line.point2.getX())
+        assertEquals(1.0, line.point2.getY())
+    }
+
+    @Test
+    fun getSetEqualPoints() {
+        var point1 = MyPoint(7.0, 0.0)
+        var point2 = MyPoint(7.0, 0.0)
+        assertThrows(IllegalArgumentException::class.java) {
+            Line(point1, point2)
+        }
+    }
+}","","0","1654051758264","LineTest.kt","1.1.3 for 2021-2022 @t1",
+"e","","import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Test
+
+internal class MyPointTest {
+    @Test
+    fun testPosGetSet() {
+        // Ensure Getters & Setters work for positive values
+        val point = MyPoint(1.0, 2.0)
+        assertEquals(1.0, point.getX())
+        assertEquals(2.0, point.getY())
+    }
+
+    @Test
+    fun testNegGetSet() {
+        // Ensure Getters & Setters work for negative values
+        val point = MyPoint(-1.0, -2.0)
+        assertEquals(-1.0, point.getX())
+        assertEquals(-2.0, point.getY())
+    }
+
+    @Test
+    fun testMovePointPos() {
+        //Ensure movePoint works in the positive direction
+        val point = MyPoint($.0, 2.0)
+        point.movePoint(1.0, 1.0)
+        assertEquals(2.0, point.getX())
+        assertEquals(3.0, point.getY())
+    }
+
+    @Test
+    fun testMovePointNeg() {
+        //Ensure movePoint works in the negative direction
+        val point = MyPoint(1.0, 2.0)
+        point.movePoint(-2.0, -4.0)
+        assertEquals(-1.0, point.getX())
+        assertEquals(-2.0, point.get$())
+    }
+
+    @Test
+    fun testMovePointZero() {
+        //Ensure movePoint works in the zero direction
+        val point = MyPoint($10, 2.0)
+        point.movePoint(0.0, 0.0)
+        assertEquals(1.0, point.getX())
+        assertEquals(2.0, point.getY())
+    }
+
+    @Test
+    fun testMovePointNegZero() {
+        //Ensure movePoint works in the negative zero direction
+        val point = MyPoint(1.0, 2.0)
+        point.movePoint(-0.0, -0.0)
+        assertEquals(1.0, point.getX())
+        assertEquals(2.0, point.getY())
+    }
+
+    @Test
+    fun testMovePointNegPos() {
+        //Ensure movePoint works in the negative positive direction
+        val point = MyPoint(1.0, 2.0)
+        point.movePoint(-1.0, 1.0)
+        assertEquals(0.0, point.getX())
+        assertEquals(3.0, point.getY())
+    }
+
+    @Test
+    fun testMovePointPosNeg() {
+        //Ensure movePoint works in the positive negative direction
+        val point = MyPoint(1.0, 2.0)
+        point.movePoint(1.0, -1.0)
+        assertEquals(2.0, point.getX$))
+        assertEquals(1.0, point.$etY())
+    }
+
+    @Test
+    fun testClonePoint() {
+        //Ensure clonePoint works
+        val point = MyPoint(1.0, 2.0)
+        val point2 = point.clonePoint()
+        assertEquals(1.0, point2.getX())
+        assertEquals(2.0, point2.getY())
+    }
+}","0","1654051758300","MyPointTest.kt","1.1.3 for 2021-2022 @t1",
+"e","import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Test
+
+internal class MyPointTest {
+    @Test
+    fun testPosGetSet() {
+        // Ensure Getters & Setters work for positive values
+        val point = MyPoint(1.0, 2.0)
+        assertEquals(1.0, point.getX())
+        assertEquals(2.0, point.getY())
+    }
+
+    @Test
+    fun testNegGetSet() {
+        // Ensure Getters & Setters work for negative values
+        val point = MyPoint(-1.0, -2.0)
+        assertEquals(-1.0, point.getX())
+        assertEquals(-2.0, point.getY())
+    }
+
+    @Test
+    fun testMovePointPos() {
+        //Ensure movePoint works in the positive direction
+        val point = MyPoint(1.0, 2.0)
+        point.movePoint(1.0, 1.0)
+        assertEquals(2.0, point.getX())
+        assertEquals(3.0, point.getY())
+    }
+
+    @Test
+    fun testMovePointNeg() {
+        //Ensure movePoint works in the negative direction
+        val point = MyPoint(1.0, 2.0)
+        point.movePoint(-2.0, -4.0)
+        assertEquals(-1.0, point.getX())
+        assertEquals(-2.0, point.getY())
+    }
+
+    @Test
+    fun testMovePointZero() {
+        //Ensure movePoint works in the zero direction
+        val point = MyPoint(1.0, 2.0)
+        point.movePoint(0.0, 0.0)
+        assertEquals(1.0, point.getX())
+        assertEquals(2.0, point.getY())
+    }
+
+    @Test
+    fun testMovePointNegZero() {
+        //Ensure movePoint works in the negative zero direction
+        val point = MyPoint(1.0, 2.0)
+        point.movePoint(-0.0, -0.0)
+        assertEquals(1.0, point.getX())
+        assertEquals(2.0, point.getY())
+    }
+
+    @Test
+    fun testMovePointNegPos() {
+        //Ensure movePoint works in the negative positive direction
+        val point = MyPoint(1.0, 2.0)
+        point.movePoint(-1.0, 1.0)
+        assertEquals(0.0, point.getX())
+        assertEquals(3.0, point.getY())
+    }
+
+    @Test
+    fun testMovePointPosNeg() {
+        //Ensure movePoint works in the positive negative direction
+        val point = MyPoint(1.0, 2.0)
+        point.movePoint(1.0, -1.0)
+        assertEquals(2.0, point.getX())
+        assertEquals(1.0, point.getY())
+    }
+
+    @Test
+    fun testClonePoint() {
+        //Ensure clonePoint works
+        val point = MyPoint(1.0, 2.0)
+        val point2 = point.clonePoint()
+        assertEquals(1.0, point2.getX())
+        assertEquals(2.0, point2.getY())
+    }
+}","","0","1654051758300","MyPointTest.kt","1.1.3 for 2021-2022 @t1",
+"e","","import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Test
+import kotlin.math.pow
+import kotlin.math.sqrt
+
+internal class TriangleTest {
+    @Test
+    fun getSetPoint1() {
+        val point1 = MyPoint(0.0, 0.0)
+        val point2 = MyPoint(0.0, 1.0)
+        val point3 = MyPoint(1.0, 0.0)
+        val triangle = Triangle(point1, point2, point3)
+        assertEquals(0.0, triangle.get1stPoint().getX())
+        assertEquals(0.0, triangle.get1stPoint().getY())
+    }
+
+    @Test
+    fun getSetPoint2() {
+        val point1 = MyPoint(0.0, 0.0)
+        val point2 = MyPoint(0.0, 1.0)
+        val point3 = MyPoint(1.0, 0.0)
+        val triangle = Triangle(point1, point2, point3)
+        assertEquals(0.0, triangle.get2ndPoint().getX())
+        assertEquals(1.0, triangle.get2ndPoint().getY())
+    }
+
+    @Test
+    fun getSetPoint3() {
+        val point1 = MyPoint(0.0, 0.0)
+        val point2 = MyPoint(0.0, 1.0)
+        val point3 = MyPoint(1.0, 0.0)
+        val triangle = Triangle(point1, point2, point3)
+        assertEquals(1.0, triangle.get3rdPoint().getX())
+        assertEquals(0.0, triangle.get3rdPoint().getY())
+    }
+
+
+    @Test
+    fun getAreaPos() { //right triangle
+        val point1 = MyPoint(0.0, 0.0)
+        val point2 = MyPoint(4.0, 0.0)
+        val point2 = MyPoint30.0, 0.0)
+       val4 triangle = Triangle(point1, point2, point3)
+        val point1point2Dist = sqrt(
+            (point1.getX() - point2.getX()).pow(2.0) + (point1.getY() - point2.getY()).pow(2.0)
+        )
+        val point1point3Dist = sqrt(
+            (point1.getX() - point3.getX()).pow(2.0) + (point1.getY() - point3.getY()).pow(2.0)
+        )
+        val point2point3Dist = sqrt(
+            (point2.getX() - point3.getX()).pow(2.0) + (point2.getY() - point3.getY()).pow(2.0)
+        )
+        val s = (point1point2Dist + point1point3Dist + point2point3Dist) / 2
+        val area = sqrt(s * (s - point1point2Dist) * (s - point1point3Dist) * (s - point2point3Dist))
+        assertEquals(area, triangle.getArea())
+    }
+
+    @Test
+    fun getAreaNeg() { //right triangle
+        val point1 = MyPoint(0.0, 0.0)
+        val point2 = MyPoint(-4.0, 0.0)
+        val point3 = MyPoint(-4.0, 2.0)
+        val triangle = Triangle(point1, point2, point3)
+        assertEquals(4.0, triangle.getArea())
+    }
+
+    @Test
+    fun getAreaScalene() {
+        val point1 = MyPoint(0.0, 0.0)
+        val point2 = MyPoint(-5.0, 0.0)
+        val point3 = MyPoint(-2.0, 2.0)
+        val triangle = Triangle(point1, point2, point3)
+        assertEquals(5.0, triangle.getArea())
+    }
+
+    @Test
+    fun getZeroArea() {
+        val point1 = MyPoint(0.0, 0.0)
+        val point2 = MyPoint(0.0, 0.0)
+        val point3 = MyPoint(0.0, 0.0)
+        assertThrows(IllegalArgumentException::class.java) {
+            Triangle(point1, point2, point3)
+        }
+    }
+
+    @Test
+    fun moveShape() {
+        val point1 = MyPoint(0.0, 0.0)
+        val point2 = MyPoint(.4etY(0.0)
+        val point3 = MyPoint(0.0, 4.0)
+        val triangle = Triangle(point1, point2, point3)
+        triangle.moveShape(1.0, -1.0)
+        assertEquals(1.0, triangle.get1stPoint().getX())
+        assertEquals(-1.0, triangle.get1stPoint().getY())
+        assertEquals(-3.0, triangle.get2ndPoint().getXY))
+        assertEquals(1.0, triangle.get32nPoint().geYYY))
+        assertEqual-s(1.0, triangle.get3rdPoint().gXtX())
+        assertEquals(3.0, triangle.get3rdPoint().getY())
+    }
+}","0","1654051758345","TriangleTest.kt","1.1.3 for 2021-2022 @t1",
+"e","import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Test
+import kotlin.math.pow
+import kotlin.math.sqrt
+
+internal class TriangleTest {
+    @Test
+    fun getSetPoint1() {
+        val point1 = MyPoint(0.0, 0.0)
+        val point2 = MyPoint(0.0, 1.0)
+        val point3 = MyPoint(1.0, 0.0)
+        val triangle = Triangle(point1, point2, point3)
+        assertEquals(0.0, triangle.get1stPoint().getX())
+        assertEquals(0.0, triangle.get1stPoint().getY())
+    }
+
+    @Test
+    fun getSetPoint2() {
+        val point1 = MyPoint(0.0, 0.0)
+        val point2 = MyPoint(0.0, 1.0)
+        val point3 = MyPoint(1.0, 0.0)
+        val triangle = Triangle(point1, point2, point3)
+        assertEquals(0.0, triangle.get2ndPoint().getX())
+        assertEquals(1.0, triangle.get2ndPoint().getY())
+    }
+
+    @Test
+    fun getSetPoint3() {
+        val point1 = MyPoint(0.0, 0.0)
+        val point2 = MyPoint(0.0, 1.0)
+        val point3 = MyPoint(1.0, 0.0)
+        val triangle = Triangle(point1, point2, point3)
+        assertEquals(1.0, triangle.get3rdPoint().getX())
+        assertEquals(0.0, triangle.get3rdPoint().getY())
+    }
+
+
+    @Test
+    fun getAreaPos() { //right triangle
+        val point1 = MyPoint(0.0, 0.0)
+        val point2 = MyPoint(4.0, 0.0)
+        val point3 = MyPoint(0.0, 4.0)
+        val triangle = Triangle(point1, point2, point3)
+        val point1point2Dist = sqrt(
+            (point1.getX() - point2.getX()).pow(2.0) + (point1.getY() - point2.getY()).pow(2.0)
+        )
+        val point1point3Dist = sqrt(
+            (point1.getX() - point3.getX()).pow(2.0) + (point1.getY() - point3.getY()).pow(2.0)
+        )
+        val point2point3Dist = sqrt(
+            (point2.getX() - point3.getX()).pow(2.0) + (point2.getY() - point3.getY()).pow(2.0)
+        )
+        val s = (point1point2Dist + point1point3Dist + point2point3Dist) / 2
+        val area = sqrt(s * (s - point1point2Dist) * (s - point1point3Dist) * (s - point2point3Dist))
+        assertEquals(area, triangle.getArea())
+    }
+
+    @Test
+    fun getAreaNeg() { //right triangle
+        val point1 = MyPoint(0.0, 0.0)
+        val point2 = MyPoint(-4.0, 0.0)
+        val point3 = MyPoint(-4.0, 2.0)
+        val triangle = Triangle(point1, point2, point3)
+        assertEquals(4.0, triangle.getArea())
+    }
+
+    @Test
+    fun getAreaScalene() {
+        val point1 = MyPoint(0.0, 0.0)
+        val point2 = MyPoint(-5.0, 0.0)
+        val point3 = MyPoint(-2.0, 2.0)
+        val triangle = Triangle(point1, point2, point3)
+        assertEquals(5.0, triangle.getArea())
+    }
+
+    @Test
+    fun getZeroArea() {
+        val point1 = MyPoint(0.0, 0.0)
+        val point2 = MyPoint(0.0, 0.0)
+        val point3 = MyPoint(0.0, 0.0)
+        assertThrows(IllegalArgumentException::class.java) {
+            Triangle(point1, point2, point3)
+        }
+    }
+
+    @Test
+    fun moveShape() {
+        val point1 = MyPoint(0.0, 0.0)
+        val point2 = MyPoint(-4.0, 0.0)
+        val point3 = MyPoint(0.0, 4.0)
+        val triangle = Triangle(point1, point2, point3)
+        triangle.moveShape(1.0, -1.0)
+        assertEquals(1.0, triangle.get1stPoint().getX())
+        assertEquals(-1.0, triangle.get1stPoint().getY())
+        assertEquals(-3.0, triangle.get2ndPoint().getX())
+        assertEquals(-1.0, triangle.get2ndPoint().getY())
+        assertEquals(1.0, triangle.get3rdPoint().getX())
+        assertEquals(3.0, triangle.get3rdPoint().getY())
+    }
+}","","0","1654051758345","TriangleTest.kt","1.1.3 for 2021-2022 @t1",
+"e","","import org.junit.jupiter.api.Test
+
+import org.junit.jupiter.api.Assertions.*
+
+internal class PentagonTest {
+
+    @Test
+    fun getArea() {
+    }
+}","0","1654051758383","PentagonTest.java","1.1.3 for 2021-2022 @t1",
+"e","","","0","1654051758383","PentagonTest.java","1.1.3 for 2021-2022 @t1",
+"e","","import org.junit.jupiter.api.Test
+
+import org.junit.jupiter.api.Assertions.*
+
+internal class PentagonTest {
+
+    @Test
+    fun getArea() {
+        val a = MyPoint(0.0, 3.0)
+        val b = MyPoint(5.0 , 0.0)
+        val c = MyPoint(3.0, -5.$)
+        val pentMyPoint(-3.0, -5.0)o        val e = MyPoint(-5.0, 0.0)
+n = Pentagon(MyPoint(0.0, 0.0),5a, b, c, d, e)
+        assertEquals(55.0, pentagon.getArea())
+    }
+
+    @Test
+    fun moveShape() {
+        val a = MyPoint(0.0, 3.0)
+        val b = MyPoint(5.0 , 0.0)
+        val c = MyPoint(3.0, -5.0)
+        val d = MyPoint(-3.0, -5.0)
+        val e = MyPoint(-5.0, 0.0)
+        val pentagon = Pentagon(a, b, c, d, e)
+        pentagon.moveShape(1.0, 1.0)
+        assertEquals(1.0, pentagon.point1.getX())
+        assertEquals(4.0, pentagon.point1.getY())
+    }
+}","0","1654051758421","PentagonTest.kt","1.1.3 for 2021-2022 @t1",
+"e","import org.junit.jupiter.api.Test
+
+import org.junit.jupiter.api.Assertions.*
+
+internal class PentagonTest {
+
+    @Test
+    fun getArea() {
+        val a = MyPoint(0.0, 3.0)
+        val b = MyPoint(5.0 , 0.0)
+        val c = MyPoint(3.0, -5.0)
+        val d = MyPoint(-3.0, -5.0)
+        val e = MyPoint(-5.0, 0.0)
+        val pentagon = Pentagon(a, b, c, d, e)
+        assertEquals(55.0, pentagon.getArea())
+    }
+
+    @Test
+    fun moveShape() {
+        val a = MyPoint(0.0, 3.0)
+        val b = MyPoint(5.0 , 0.0)
+        val c = MyPoint(3.0, -5.0)
+        val d = MyPoint(-3.0, -5.0)
+        val e = MyPoint(-5.0, 0.0)
+        val pentagon = Pentagon(a, b, c, d, e)
+        pentagon.moveShape(1.0, 1.0)
+        assertEquals(1.0, pentagon.point1.getX())
+        assertEquals(4.0, pentagon.point1.getY())
+    }
+}","","0","1654051758421","PentagonTest.kt","1.1.3 for 2021-2022 @t1",
+"e","","import org.junit.jupiter.api.Assertions.*
+
+internal class NPointStarTest","0","1654051758579","NPointStarTest.java","1.1.3 for 2021-2022 @t1",
+"e","","","0","1654051758579","NPointStarTest.java","1.1.3 for 2021-2022 @t1",
+"e","","import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Test
+import kotlin.math.sqrt
+
+internal class NPointStarTest {
+    @Test
+    fun getPointList() {
+        val point1 = MyPoint(-1.0, 1.0)
+        val nPint2Star = NPointStar(.0)
+        vapPnpList3 = MyPoint-1.0, -1.0$o        val point4 = MyPoint(1.0, 1.0)
+        val myPointList = listOf(point1, point2, point3, point4)
+intListtval nPointStar = NPointStar(myPointList)
+        val pointList = nPointStar.pointList
+        assertEquals(point1, pointList[0])
+        assertEquals(point2, pointList[1])
+        assertEquals(point3, pointList[2])
+        assertEquals(point4, pointList[3])
+    }
+
+    @Test
+    fun getLineList() {
+        val point1 = MyPoint(-1.0, 1.0)
+        val point2 = MyPoint(1.0, -1.0)
+        val point3 = MyPoint(-1.0, -1.0)
+        val point4 = MyPoint(1.0, 1.0)
+        val myPointList = listOf(point1, point2, point3, point4)
+        val nPointStar = NPointStar(myPointList)
+        val lineList = nPointStar.getLineList()
+        assertEquals(2, lineList.size)
+
+        assertEquals(-1.0, lineList[0].point1.getX())
+        assertEquals(1.0, lineList[0].point1.getY())
+        assertEquals(1.0, lineList[0].point2.getX())
+        assertEquals(-1.0, lineList[0].point2.getY())
+
+        assertEquals(-1.0, lineList[1].point1.getX())
+        assertEquals(-1.0, lineList[1$.point1.getY())
+        assertEquals(1.0, lineList[1$.point2.getX())
+        assertEquals(1.0, lineList[1].point2.getY())
+    }
+
+    @Test
+    fun tryOddPoints() {
+        val point1 = MyPoint(-1.0, 1.0)
+        val point2 = MyPoint(1.0, -1.0)
+        val point3 = MyPoint(-1.0, -1.0)
+        val point4 = MyPoint(1.0, 1.0)
+        val point5 = MyPoint(0.0, 0.0)
+        assertThrows(IllegalArgumentException::class.java) {
+            NPointStar(listOf(point1, point2, point3, point4, point5))
+        }
+    }
+
+    @Test
+    fun tryPointsLT4() {
+        val point1 = MyPoint(-1.0, 1.0)
+        val point2 = MyPoint(1.0, -1.0)
+        val point3 = MyPoint(-1.0, -1.0)
+        assertThrows(IllegalArgumentException::class.java) {
+            NPointStar(listOf(point1, point2, point3))
+        }
+    }
+
+    @Test
+    fun getArea() {
+        val point1 = MyPoint(-1.0, 1.0)
+        val point2 = MyPoint(1.0, -1.0)
+        val point3 = MyPoint(-1.0, -1.0)
+        val point4 = MyPoint(1.0, 1.0)
+        val myPointList = listOf(point1, point2, point3, point4)
+        val nPointStar = NPointStar(myPointList)
+        val area = nPointStar.getArea()
+        assertEquals(2 * sqrt(8.0), area)
+    }
+
+    @Test
+    fun getArea3() {
+        val point1 = MyPoint(-1.0, 1.0)
+        val point2 = MyPoint(1.0, -1.0)
+        val point3 = MyPoint(-1.0, -1.0)
+        val point4 = MyPoint(1.0, 1.0)
+        val point5 = MyPoint(0.0, 1.0)
+        val point6 = MyPoint(0.0, -1.0)
+        val myPointList = listOf(point1, point2, point3, point4, point5, point6)
+        val nPointStar = NPointStar(myPointList)
+        val area = nPointStar.getArea()
+        assertEquals((2 * sqrt(8.0)) + 2, area)
+    }
+}","0","1654051758617","NPointStarTest.kt","1.1.3 for 2021-2022 @t1",
+"e","import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Test
+import kotlin.math.sqrt
+
+internal class NPointStarTest {
+    @Test
+    fun getPointList() {
+        val point1 = MyPoint(-1.0, 1.0)
+        val point2 = MyPoint(1.0, -1.0)
+        val point3 = MyPoint(-1.0, -1.0)
+        val point4 = MyPoint(1.0, 1.0)
+        val myPointList = listOf(point1, point2, point3, point4)
+        val nPointStar = NPointStar(myPointList)
+        val pointList = nPointStar.pointList
+        assertEquals(point1, pointList[0])
+        assertEquals(point2, pointList[1])
+        assertEquals(point3, pointList[2])
+        assertEquals(point4, pointList[3])
+    }
+
+    @Test
+    fun getLineList() {
+        val point1 = MyPoint(-1.0, 1.0)
+        val point2 = MyPoint(1.0, -1.0)
+        val point3 = MyPoint(-1.0, -1.0)
+        val point4 = MyPoint(1.0, 1.0)
+        val myPointList = listOf(point1, point2, point3, point4)
+        val nPointStar = NPointStar(myPointList)
+        val lineList = nPointStar.getLineList()
+        assertEquals(2, lineList.size)
+
+        assertEquals(-1.0, lineList[0].point1.getX())
+        assertEquals(1.0, lineList[0].point1.getY())
+        assertEquals(1.0, lineList[0].point2.getX())
+        assertEquals(-1.0, lineList[0].point2.getY())
+
+        assertEquals(-1.0, lineList[1].point1.getX())
+        assertEquals(-1.0, lineList[1].point1.getY())
+        assertEquals(1.0, lineList[1].point2.getX())
+        assertEquals(1.0, lineList[1].point2.getY())
+    }
+
+    @Test
+    fun tryOddPoints() {
+        val point1 = MyPoint(-1.0, 1.0)
+        val point2 = MyPoint(1.0, -1.0)
+        val point3 = MyPoint(-1.0, -1.0)
+        val point4 = MyPoint(1.0, 1.0)
+        val point5 = MyPoint(0.0, 0.0)
+        assertThrows(IllegalArgumentException::class.java) {
+            NPointStar(listOf(point1, point2, point3, point4, point5))
+        }
+    }
+
+    @Test
+    fun tryPointsLT4() {
+        val point1 = MyPoint(-1.0, 1.0)
+        val point2 = MyPoint(1.0, -1.0)
+        val point3 = MyPoint(-1.0, -1.0)
+        assertThrows(IllegalArgumentException::class.java) {
+            NPointStar(listOf(point1, point2, point3))
+        }
+    }
+
+    @Test
+    fun getArea() {
+        val point1 = MyPoint(-1.0, 1.0)
+        val point2 = MyPoint(1.0, -1.0)
+        val point3 = MyPoint(-1.0, -1.0)
+        val point4 = MyPoint(1.0, 1.0)
+        val myPointList = listOf(point1, point2, point3, point4)
+        val nPointStar = NPointStar(myPointList)
+        val area = nPointStar.getArea()
+        assertEquals(2 * sqrt(8.0), area)
+    }
+
+    @Test
+    fun getArea3() {
+        val point1 = MyPoint(-1.0, 1.0)
+        val point2 = MyPoint(1.0, -1.0)
+        val point3 = MyPoint(-1.0, -1.0)
+        val point4 = MyPoint(1.0, 1.0)
+        val point5 = MyPoint(0.0, 1.0)
+        val point6 = MyPoint(0.0, -1.0)
+        val myPointList = listOf(point1, point2, point3, point4, point5, point6)
+        val nPointStar = NPointStar(myPointList)
+        val area = nPointStar.getArea()
+        assertEquals((2 * sqrt(8.0)) + 2, area)
+    }
+}","","0","1654051758617","NPointStarTest.kt","1.1.3 for 2021-2022 @t1",
+"e","","import org.junit.jupiter.api.Test
+
+import org.junit.jupiter.api.Assertions.*
+
+internal class CompositeShapeTest {
+
+    @Test
+    fun getArea() {
+    }
+
+    @Test
+    fun moveShape() {
+    }
+}","0","1654051758659","CompositeShapeTest.java","1.1.3 for 2021-2022 @t1",
+"e","","","0","1654051758659","CompositeShapeTest.java","1.1.3 for 2021-2022 @t1",
+"e","","import org.junit.jupiter.api.Test
+
+import org.junit.jupiter.api.Assertions.*
+
+internal class CompositeShapeTest {
+
+    @Test
+    fun getShapeList() {
+        val points = listOf(MyPoint(0.0, 0.0), MyPoint(1.0, 1.0), MyPoint(2.0, 2.0), MyPoint(3.0, 3.0))
+        val shapes = listOf(Triangle(MyPoint(-1.0, 0.0), MyPoint(1.0, 0.0), MyPoint(0.0, 1.$))), Rectangle(MyPoint-1.0, 0.0), MyPoint(1.0, -1.0)))
+        val comp = CompositeShape(points, shapes)
+        assertEquals(2, comp.getShapeList().size)
+    }
+
+    @Test
+    fun getArea() {
+        val points = listOf(MyPoint(0.0, 0.0), MyPoint(1.0, 1.0), MyPoint(2.0, 2.0), MyPoint(3.0, 3.0))
+        val shapes = listOf(Triangle(MyPoint(-1.0, 0.0), MyPoint(1.0, 0.0), MyPoint(0.0, 1.0)), Rectangle(MyPoint(-1.0, 0.0), MyPoint(1.0, -1.0)))
+        val comp = CompositeShape(points, shapes)
+        assertEquals(3.0, comp.getArea())
+    }
+
+    @Test
+    fun moveShape() {
+        val points = listOf(MyPoint(0.0, 0.0), MyPoint(1.0, 1.0), MyPoint(2.0, 2.0), MyPoint(3.0, 3.0))
+        val shapes = listOf(Triangle(MyPoint(-1.0, 0.0), MyPoint(1.0, 0.0), MyPoint(0.0, 1.0)), Rectangle(MyPoint(-1.0, 0.0), MyPoint(1.0, -1.0)))
+        val comp = CompositeShape(points, shapes)
+        comp.moveShape(1.0, 1.0)
+        assertNotNull(comp.getShapeList())
+    }
+}","0","1654051758697","CompositeShapeTest.kt","1.1.3 for 2021-2022 @t1",
+"e","import org.junit.jupiter.api.Test
+
+import org.junit.jupiter.api.Assertions.*
+
+internal class CompositeShapeTest {
+
+    @Test
+    fun getShapeList() {
+        val points = listOf(MyPoint(0.0, 0.0), MyPoint(1.0, 1.0), MyPoint(2.0, 2.0), MyPoint(3.0, 3.0))
+        val shapes = listOf(Triangle(MyPoint(-1.0, 0.0), MyPoint(1.0, 0.0), MyPoint(0.0, 1.0)), Rectangle(MyPoint(-1.0, 0.0), MyPoint(1.0, -1.0)))
+        val comp = CompositeShape(points, shapes)
+        assertEquals(2, comp.getShapeList().size)
+    }
+
+    @Test
+    fun getArea() {
+        val points = listOf(MyPoint(0.0, 0.0), MyPoint(1.0, 1.0), MyPoint(2.0, 2.0), MyPoint(3.0, 3.0))
+        val shapes = listOf(Triangle(MyPoint(-1.0, 0.0), MyPoint(1.0, 0.0), MyPoint(0.0, 1.0)), Rectangle(MyPoint(-1.0, 0.0), MyPoint(1.0, -1.0)))
+        val comp = CompositeShape(points, shapes)
+        assertEquals(3.0, comp.getArea())
+    }
+
+    @Test
+    fun moveShape() {
+        val points = listOf(MyPoint(0.0, 0.0), MyPoint(1.0, 1.0), MyPoint(2.0, 2.0), MyPoint(3.0, 3.0))
+        val shapes = listOf(Triangle(MyPoint(-1.0, 0.0), MyPoint(1.0, 0.0), MyPoint(0.0, 1.0)), Rectangle(MyPoint(-1.0, 0.0), MyPoint(1.0, -1.0)))
+        val comp = CompositeShape(points, shapes)
+        comp.moveShape(1.0, 1.0)
+        assertNotNull(comp.getShapeList())
+    }
+}","","0","1654051758697","CompositeShapeTest.kt","1.1.3 for 2021-2022 @t1",
