@@ -1,3 +1,4 @@
+import androidx.compose.ui.graphics.drawscope.DrawScope
 import org.junit.jupiter.api.Test
 
 import org.junit.jupiter.api.Assertions.*

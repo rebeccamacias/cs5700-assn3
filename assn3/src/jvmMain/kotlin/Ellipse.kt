@@ -1,7 +1,6 @@
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.drawscope.DrawScope
-import kotlin.math.abs
 
 open class Ellipse(var point1: MyPoint, val radius1: Double, val radius2: Double?) : Shape() {
     override var pointList: MutableList<MyPoint> = mutableListOf(point1)
@@ -34,7 +33,7 @@ open class Ellipse(var point1: MyPoint, val radius1: Double, val radius2: Double
         }
     }
 
-    override fun draw(scope: DrawScope) {
+    fun draw(scope: DrawScope.Companion) {
         val offset = Offset(point1.getX().toFloat(), point1.getY().toFloat())
         scope.drawCircle(
             center = offset,

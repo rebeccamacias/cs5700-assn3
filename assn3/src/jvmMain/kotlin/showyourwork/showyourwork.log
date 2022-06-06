@@ -51355,3 +51355,12 @@ import java.nio.file.Path
 "a","Close Active Editor",,,"1654477169727","Line.kt","1.1.3 for 2021-2022 @t1",
 "a","Close Active Editor",,,"1654477171372","Line.kt","1.1.3 for 2021-2022 @t1",
 "a","Close Active Editor",,,"1654477179357","Line.kt","1.1.3 for 2021-2022 @t1",
+"e","","DrawScope","940","1654479804851","Ellipse.kt","1.1.3 for 2021-2022 @t1",
+"e","androidx.compose.ui.graphics.drawscope.DrawScope.Companion","","940","1654479804852","Ellipse.kt","1.1.3 for 2021-2022 @t1",
+"e","","override","915","1654479804908","Ellipse.kt","1.1.3 for 2021-2022 @t1",
+"e",""," ","915","1654479804909","Ellipse.kt","1.1.3 for 2021-2022 @t1",
+"e","","androidx.compose.ui.graphics.drawscope","931","1654479804960","Ellipse.kt","1.1.3 for 2021-2022 @t1",
+"e","",".","931","1654479804961","Ellipse.kt","1.1.3 for 2021-2022 @t1",
+"e","","import kotlin.math.abs","141","1654479805715","Ellipse.kt","1.1.3 for 2021-2022 @t1",
+"e","","
+","142","1654479805717","Ellipse.kt","1.1.3 for 2021-2022 @t1",
