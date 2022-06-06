@@ -1,3 +1,7 @@
+import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.geometry.Size
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.drawscope.DrawScope
 import kotlin.math.abs
 
 open class Rectangle(var point1: MyPoint, var point2: MyPoint): Shape() {
@@ -38,5 +42,13 @@ open class Rectangle(var point1: MyPoint, var point2: MyPoint): Shape() {
         for (point in pointList) {
             point.movePoint(xDelta, yDelta)
         }
+    }
+
+    override fun draw(scope: DrawScope) {
+        scope.drawRect(
+            topLeft = Offset(point1.getX().toFloat(), point1.getY().toFloat()),
+            size = Size(width.toFloat(), height.toFloat()),
+            color = Color.Red
+        )
     }
 }

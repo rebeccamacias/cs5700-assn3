@@ -1,3 +1,4 @@
+import androidx.compose.ui.graphics.drawscope.DrawScope
 import kotlin.math.pow
 import kotlin.math.sqrt
 
@@ -64,5 +65,9 @@ class Triangle(var point1: MyPoint, var point2: MyPoint, var point3: MyPoint): S
         for (point in pointList) {
             point.movePoint(xDelta, yDelta)
         }
+    }
+
+    override fun draw(scope: DrawScope) {
+        throw NotImplementedError("Not implemented")
     }
 }

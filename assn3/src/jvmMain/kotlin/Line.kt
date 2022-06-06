@@ -1,3 +1,6 @@
+import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.drawscope.DrawScope
 import kotlin.math.pow
 import kotlin.math.sqrt
 
@@ -31,5 +34,14 @@ class Line(var point1: MyPoint, var point2: MyPoint): Shape() {
         for (point in pointList) {
             point.movePoint(xDelta, yDelta)
         }
+    }
+
+    override fun draw(scope: DrawScope) {
+        scope.drawLine(
+            start = Offset(point1.getX().toFloat(), point1.getY().toFloat()),
+            end = Offset(point2.getX().toFloat(), point2.getY().toFloat()),
+            color = Color.Black,
+            strokeWidth = 5f
+        )
     }
 }

@@ -1,3 +1,7 @@
+import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.drawscope.DrawScope
+
 class NPointStar(userList: List<MyPoint>) : Shape() {
     override var pointList: MutableList<MyPoint> = mutableListOf()
     private var lineList: MutableList<Line> = mutableListOf()
@@ -22,6 +26,10 @@ class NPointStar(userList: List<MyPoint>) : Shape() {
         }
     }
 
+    override fun draw(scope: DrawScope) {
+        TODO("Not implemented")
+    }
+
     fun getLineList(): MutableList<Line> {
         return lineList
     }
@@ -37,6 +45,7 @@ class NPointStar(userList: List<MyPoint>) : Shape() {
 
     private fun makeLineList() {
         for (i in 0 until pointList.size) {
+
             if (i % 2 == 0) {
                 lineList.add(Line(pointList[i], pointList[i + 1]))
             }

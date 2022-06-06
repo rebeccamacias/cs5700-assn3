@@ -1,6 +1,7 @@
+import androidx.compose.ui.graphics.drawscope.DrawScope
 import kotlin.math.roundToInt
 
-class CompositeShape(userPoints: List<MyPoint>, userShapes: List<Shape>) : Shape() {
+class CompositeShape(userPoints: MutableList<MyPoint>, userShapes: MutableList<Shape>) : Shape() {
     override var pointList: MutableList<MyPoint> = mutableListOf()
     private var shapeList: MutableList<Shape> = mutableListOf()
 
@@ -35,6 +36,12 @@ class CompositeShape(userPoints: List<MyPoint>, userShapes: List<Shape>) : Shape
     override fun moveShape(xDelta: Double, yDelta: Double) {
         for (shape in shapeList) {
             shape.moveShape(xDelta, yDelta)
+        }
+    }
+
+    override fun draw(scope: DrawScope) {
+        for (shape in shapeList) {
+            shape.draw(scope)
         }
     }
 }

@@ -1,3 +1,4 @@
+import androidx.compose.ui.graphics.drawscope.DrawScope
 import org.jetbrains.skia.Point3
 import kotlin.math.abs
 import kotlin.math.pow
@@ -37,5 +38,9 @@ class Pentagon(val point1: MyPoint, val point2: MyPoint, val point3: MyPoint, va
         for (point in pointList) {
             point.movePoint(xDelta, yDelta)
         }
+    }
+
+    override fun draw(scope: DrawScope) {
+        throw NotImplementedError("Not implemented")
     }
 }
